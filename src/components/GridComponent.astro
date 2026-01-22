@@ -1,0 +1,14 @@
+---
+const { name } = Astro.props;
+const { url } = Astro.props;
+const { img } = Astro.props;
+const { ...attrs } = Astro.props;
+---
+
+<div {...attrs} class="object-center items-center text-center m-10 justify-center">
+    <a href={url} class="flex flex-col justify-center object-center items-center transition-transform duration-300 ease-in-out hover:scale-105">
+        <img src={img} class="w-52 h-32 object-cover object-center items-center mb-2 transition-all duration-300 ease-out transform hover:-translate-y-3">
+        <p class="text-[#5fb3b3] font-[cursive] text-lg">{name}</p>
+    </a>
+</div>
+

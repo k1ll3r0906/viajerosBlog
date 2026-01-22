@@ -1,0 +1,24 @@
+---
+const { items } = Astro.props;
+const { name } = Astro.props;
+const { url } = Astro.props;
+const Dropdown = Array.isArray(items) && items.length > 0;
+---
+
+<li class="relative group">
+  
+  <a href={url} class="uppercase font-semibold tracking-wide text-white hover:text-[#426304] transition-colors">
+    {name}
+  </a>
+
+  {Dropdown ? (
+      <div class="absolute left-0 top-full mt-0 hidden bg-white shadow-lg group-hover:block">
+        {items.map((item) => (
+          <a href={item.url} class="block px-4 py-3 text-sm font-bold bg-[#2accc1] text-white hover:bg-white hover:text-[#426304]">
+            {item.label}
+          </a>
+        ))}
+      </div>
+    ) : null
+  }
+</li>

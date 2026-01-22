@@ -1,0 +1,20 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Continents from "../../../components/Continents.astro";
+---
+
+<Layout> 
+    <div class="h-[40vh] md:h-[60vh] lg:h-[70vh] bg-[url('/portal2.png')] bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center"></div>
+    <p class="text-[#5fb3b3] font-bold text-lg drop-shadow-lg flex justify-center items-center text-center mt-5">¿ESTÁ EUROPA EN TUS PLANES VIAJEROS?</p>
+    <p class="justify-center items-center text-center m-2">El país que mejor conozco obviamente es <strong>España</strong>, pero también he viajado mucho a<strong> Portugal, Reino Unido e Italia</strong>, otros paises como <strong>Alemania y Francia</strong> también he viajado pero muy pocas veces.</p>
+    <p class="justify-center items-center text-center m-2">También he estado en paises como: Holanda, Belgica, Irlanda, Polonia o Grecia.... por lo que si necesitas de alguna información, !no dudes en contactarme¡</p>
+    <p class="text-[#5fb3b3] font-bold text-lg drop-shadow-lg flex justify-center items-center text-center mt-5">ALGUNAS IDEAS SOBRE VIAJES POR EUROPA</p>
+    <div class="grid grid-cols-3 place-items-center scale-90 justify-center items-center text-center">
+        <Continents name="España" img="/spain.png" url="#"></Continents>
+        <Continents name="Francia" img="/france.png" url="#"></Continents>
+        <Continents name="Portugal" img="/portugal.png" url="#"></Continents>
+        <Continents name="Reino Unido" img="/uk.png" url="#"></Continents>
+        <Continents name="Italia" img="/italy.png" url="#"></Continents>
+        <Continents name="Alemania" img="/germany.png" url="#"></Continents>
+    </div>
+</Layout>

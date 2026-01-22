@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Los Angeles",
+    "description": "La Ciudad del Cine",
+    "image": "/losangeles.png"
+  },
+  {
+    "name": "San Francisco",
+    "description": "La Ciudad de la Diversidad",
+    "image": "/sanfrancisco.png"
+  },
+  {
+    "name": "Gran Cañón",
+    "description": "El Paisaje Perfecto del Oeste",
+    "image": "/grancanion.png"
+  },
+  {
+    "name": "New York",
+    "description": "La Ciudad de los Rascacielos",
+    "image": "/newyork.png"
+  },
+  {
+    "name": "New Orleans",
+    "description": "La Ciudad Francesa",
+    "image": "/neworleans.png"
+  }
+]

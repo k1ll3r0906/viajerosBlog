@@ -1,0 +1,19 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Continents from "../../../components/Continents.astro";
+---
+
+<Layout>
+    <div class="h-[40vh] md:h-[60vh] lg:h-[70vh] bg-[url('/portal3.png')] bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center"></div>
+    <p class="text-[#5fb3b3] font-bold text-lg drop-shadow-lg flex justify-center items-center text-center mt-5">¿ESTÁ AMERICA EN TUS PLANES VIAJEROS?</p>
+    <p class="justify-center items-center text-center m-2">Entre mis experiencias está vivir unos meses en <strong>Estados Unidos</strong> concretamente en <strong>New Orleans</strong>. Pero también he visitado paises como: <strong>Canada, Mexico o Argentina...</strong> Son experiencias unicas que os cuento por separado.</p>
+    <p class="text-[#5fb3b3] font-bold text-lg drop-shadow-lg flex justify-center items-center text-center mt-5">ALGUNAS IDEAS SOBRE VIAJES POR AMERICA</p>
+    <div class="grid grid-cols-3 place-items-center scale-90 justify-center items-center text-center">
+        <Continents name="Estados Unidos" img="/eeuu2.png" url="/destinations/americaCont/eeuu"></Continents>
+        <Continents name="Canadá" img="/canada.png" url="#"></Continents>
+        <Continents name="Mexico" img="/mexico.png" url="#"></Continents>
+        <Continents name="Brasil" img="/brasil.png" url="#"></Continents>
+        <Continents name="Argentina" img="/argentina.png" url="#"></Continents>
+        <Continents name="Puerto Rico" img="/pr.png" url="#"></Continents>
+    </div>
+</Layout>

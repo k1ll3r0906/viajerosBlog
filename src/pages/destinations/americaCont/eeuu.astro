@@ -1,0 +1,25 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import posts from "../../../posts.json"
+---
+
+<Layout>
+    <div class="h-[40vh] md:h-[60vh] lg:h-[70vh] bg-[url('/portal4.png')] bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center"></div>
+    <p class="text-[#5fb3b3] font-bold text-lg drop-shadow-lg flex justify-center items-center text-center mt-5">¿ESTÁ ESTADOS UNIDOS ENTRE TUS PLANES?</p>
+    <p class="justify-center items-center text-center m-2">Durante muchos años he visitado <strong>Estados Unidos</strong> muchas veces, he estado en sitios como: <strong>Los Angeles, San Francisco, Santa Monica, Hollywood, Gran Cañon, New Jersey, New York o New Orleans</strong>, en este ultimo estuve 3 meses enteros viviendo, visitando y explorando.</p>
+    <p class="justify-center items-center text-center m-2">Estados unidos ha sido un pais que me ha dado la esencia de viajar, disfrutar de los paisajes y costumbres. Yo creo que es el pais perfecto para empezar a viajar y vivir nuevas experiencias.</p>
+    <div class="relative max-w-7xl mx-auto overflow-hidden">
+        <div class="flex gap-10 overflow-x-auto  px-40">
+            {posts.map((post) => (
+                <div class="snap-center shrink-0 w-80 my-10">
+                    <div class=" bg-white rounded-2xl p-8 text-center shadow-lg transition-transform duration-300 ease-out hover:scale-105">
+                        <img src={post.image} alt={post.name} class="w-24 h-24 mx-auto rounded-full object-cover mb-6"/>
+                        <h3 class="text-gray-900 text-xl font-semibold">{post.name}</h3>
+                        <p class="text-gray-600 text-base mb-6">{post.description}</p>
+                        <input type="button" value="Leer" class="bg-gray-900 text-white px-6 py-2 rounded-lg text-sm cursor-pointer ease-out  hover:scale-105"/>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</Layout>
